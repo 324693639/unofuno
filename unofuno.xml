@@ -40,7 +40,7 @@
                 </value>
                 <next>
                   <block type="oled_drawtext" id="150">
-                    <field name="TEXT">MOVE B!TCH GET OUT MY WAY</field>
+                    <field name="TEXT">GET OUT MY WAY</field>
                     <next>
                       <block type="led_select" id="259" inline="true">
                         <field name="ACTION">FLASH</field>
