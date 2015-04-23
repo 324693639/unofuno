@@ -42,7 +42,17 @@
                   <block type="oled_drawtext" id="150">
                     <field name="TEXT">MOVE B!TCH GET OUT MY WAY</field>
                     <next>
-                      <block type="movement_right" id="7"></block>
+                      <block type="led_select" id="259" inline="true">
+                        <field name="ACTION">FLASH</field>
+                        <value name="LED">
+                          <block type="math_number" id="266">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="movement_right" id="7"></block>
+                        </next>
+                      </block>
                     </next>
                   </block>
                 </next>
@@ -64,7 +74,17 @@
               </block>
             </value>
             <statement name="DO1">
-              <block type="movement_left" id="115"></block>
+              <block type="led_select" id="243" inline="true">
+                <field name="ACTION">FLASH</field>
+                <value name="LED">
+                  <block type="math_number" id="250">
+                    <field name="NUM">5</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="movement_left" id="115"></block>
+                </next>
+              </block>
             </statement>
             <statement name="ELSE">
               <block type="movement_forward" id="8"></block>
